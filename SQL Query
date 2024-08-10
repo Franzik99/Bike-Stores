@@ -1,0 +1,25 @@
+-- List all products with their respective brands and categories.
+SELECT product_id, brands.brand_id, categories.category_id, brands.brand_name, categories.category_name
+FROM products
+JOIN brands  ON brands.brand_id = products.brand_id
+JOIN categories ON categories.category_id = products.category_id;
+ 
+--Retrieve the total number of orders placed by each customer.
+SELECT customers.customer_id, concat(customers.first_name, ' ', customers.last_name) AS FullName, COUNT(orders.order_id) AS TotalNum_of_Orders
+FROM customers
+JOIN orders ON customers.customer_id = orders.customer_id
+GROUP BY customers.customer_id, customers.first_name, customers.last_name
+ORDER By TotalNum_of_Orders DESC;
+
+--Identify the top 5 Most Costly products.
+SELECT top 5 order_items.product_id, products.product_name, (quantity * order_items.list_price) - (quantity * order_items.list_price)* discount AS TotalCost 
+FROM order_items
+JOIN products ON products.product_id = order_items.product_id
+ORDER BY TotalCost DESC;
+
+--Identify the top 5 best-selling products.
+SELECT top 5 order_items.product_id, products.product_name, Sum(quantity) AS TotalQuantity 
+FROM order_items
+JOIN products ON products.product_id = order_items.product_id
+GROUP BY order_items.product_id, products.product_name
+ORDER BY TotalQuantity DESC; 
