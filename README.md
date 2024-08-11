@@ -1,6 +1,6 @@
 # Bike-Stores
 ## About Dataset
-The Bike Store relational database is a sample dataset ideal for SQL learners to practice and enhance their querying skills. It consists of nine CSV files that cover various aspects of a retail bike store, including brands, categories, customer information, orders, order items, products, stores, staff, and stock levels. This comprehensive dataset allows users to explore complex relationships within a business context, making it an excellent resource for mastering SQL and relational database concepts.
+The Bike Store relational database is a sample dataset ideal for SQL learners to practice and enhance their querying skills. It consists of nine (9) Relational DataBase that cover various aspects of a retail bike store, including brands, categories, customer information, orders, order items, products, stores, staff, and stock levels. This comprehensive dataset allows users to explore complex relationships within a business context, making it an excellent resource for mastering SQL and relational database concepts.
 ## Tasks
 - List all products with their respective brands and categories.
 - Retrieve the total number of orders placed by each customer.
