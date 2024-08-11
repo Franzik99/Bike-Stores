@@ -11,4 +11,6 @@ The Bike Store relational database is a sample dataset ideal for SQL learners to
 - Identify the staff members who have processed the highest number of orders.
 - Determine the average order value per customer
 - Visaulization: comprehensive and interactive dashboard 
-
+## Tool
+- SQL Queries
+- Power BI 
