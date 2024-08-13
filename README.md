@@ -13,4 +13,5 @@ The Bike Store relational database is a sample dataset ideal for SQL learners to
 - Visaulization: comprehensive and interactive dashboard 
 ## Tool
 - SQL Queries
-- Power BI 
+- Power BI
+- Azure Data Studio
