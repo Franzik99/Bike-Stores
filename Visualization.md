@@ -10,3 +10,8 @@ Figure B:**Top Selling Products.**
 Figure C:**Store with the Highest Sales.**
 
 <img src="storeByRevenue.png" alt="Graph 3" width="60%">
+
+
+Figure D:**Staff Performance.**
+
+<img src="Staffperformance.png" alt="Graph 4" width="60%">
