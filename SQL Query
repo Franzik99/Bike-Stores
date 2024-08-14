@@ -44,8 +44,7 @@ JOIN stocks ON products.product_id = stocks.product_id
   JOIN staffs ON staffs.staff_id = orders.staff_id
  GROUP BY orders.order_status, orders.staff_id, staffs.first_name,staffs.last_name
  Order By Num_of_Orderprocessed DESC;
- 
-SELECT orders.staff_id, CONCAT(staffs.first_name,' ', staffs.last_name) AS Full_Name,  COUNT(orders.order_id) AS Num_of_orderProcesssed
+ SELECT orders.staff_id, CONCAT(staffs.first_name,' ', staffs.last_name) AS Full_Name,  COUNT(orders.order_id) AS Num_of_orderProcesssed
  FROM orders
  JOIN staffs ON staffs.staff_id = orders.staff_id
  GROUP BY orders.staff_id,  staffs.first_name, staffs.last_name
@@ -58,3 +57,5 @@ SELECT orders.customer_id, CONCAT(customers.first_name, ' ', customers.last_name
  JOIN order_items ON orders.order_id = order_items.order_id
  Group BY orders.customer_id,customers.first_name, customers.last_name
  ORDER BY AVGValues DESC;
+ 
+
